@@ -32,14 +32,16 @@ body {
 	padding: 26px 0 0 0;
 }
 .header__row {
+	width: 1020px;	
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	padding: 0 210px 28px 0;
+	/*align-items: flex-start;*/
+	padding: 0 0 28px 0;
 	
 }
 .logotype {
-	flex: 0 1 auto;
+	width: 174px;
+	/*flex: 0 1 auto;*/
 	
 }
 .logotype__img {
@@ -55,56 +57,70 @@ body {
 	
 }
 .contact__text {
+	width: 100%;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 12px;
 	line-height: 22px;
 	letter-spacing: 0.15px;
 	color: #000000;
+	position: relative;
 }
 .contact__hourse {
-	flex: 1 0 auto;
-	padding: 0 30px 0 0;
+	margin: 0 30px 0 34px;
+	position: relative;
+	flex: 1 0 206px;
+	padding: 0 0px 0 0;
 }
-.contact__hourse:before {
+.contact__hourse .contact__text:before {
 	content: "";
-	background: url("/random 2/random 2/img/access_time_24px.png") no-repeat;
+	position: absolute;
+	top: 0;
+	left: -34px;
+	background: url("/random-2/img/access_time_24px.png") no-repeat;
 	width: 24px;
 	height: 24px;
 	margin: 4px 10px 0 0;
 }
 .contact__callus {
-	flex: 1 0 auto;
-	padding: 0 32px 0 0;
+	margin: 0 0px 0 34px;
+	flex: 1 0 150px;
+	position: relative;
+	padding: 0 40px 0 0;
 }
-
-.contact__callus:before {
+.contact__callus .contact__text:before {
 	content: "";
-	background: url("/random 2/random 2/img/phone_24px.png") no-repeat;
+	position: absolute;
+	top: 0;
+	left: -34px;
+	background: url("/random-2/img/phone_24px.png") no-repeat;
 	width: 24px;
 	height: 24px;
 	margin: 4px 10px 0 0;
 }
 .contact__button {
 	flex: 1 0 211px;
-	padding-right: 7px;
+	width: 100%;
+	margin: -48px 0 0 0;
+	/*padding-right: 10px;*/
 }
 .button {
+	display: block;
 	position: relative;
-	top: 0;
+	top: 0px;
 	left: 0;
+	width: 290px;
 	z-index: 0;
-	margin: 0;
 }
 .button button:before {
 	content: "";
 	position: absolute;
 	z-index: 3;
-	top: 12.5px;
+	top: 18px;
 	right: -10px;
 	width: 11px;
 	height: 11px;
-	background: url("/random 2/random 2/img/arrow_forward_24px.png") no-repeat;
+	background: url("/random-2/img/arrow_forward_24px.png") no-repeat;
 }
 .button button:after {
 	content: "";
@@ -113,13 +129,13 @@ body {
 	top: 0px;
 	right: -20px;
 	width: 40px;
-	height: 40px;
-	border-bottom: 40px solid #000;
+	height: 48px;
+	border-bottom: 48px solid #000;
 	border-left: 16px solid transparent;
 }
 .button button{
 	padding: 0 40px 0 20px;
-	height: 40px;
+	height: 48px;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 12px;
@@ -218,7 +234,7 @@ body {
 }
 .content-title__question:before {
 	content: "";
-	background-image: url("/random 2/random 2/img/Overline Mark.png");
+	background-image: url("/random-2/img/Overline Mark.png");
 	background-size: 150% ;
 	width: 20px;
 	height: 20px;
@@ -294,13 +310,14 @@ body {
 .page-thrid__video {
 	height: 500px;
 	max-width: 100%;
-	background: url("/random 2/random 2/img/BG\ Image.png");
+	background: url("/random-2/img/BG Image.png") 0 0/100% auto no-repeat;
 }
 .page-thrid__video-title {
 	font-style: normal;
 	font-weight: 900;
 	font-size: 36px;
 	line-height: 42px;
+	width: 500px;
 	margin: 0 8% 0 55%;
 	padding: 112px 0 43px 0;
 }
@@ -390,37 +407,54 @@ body {
 }
 .page-five__column {
 	display: flex;
+	justify-content: space-between;
 	padding-top: 130px;
 }
 .page-five__item {
-	flex: 1 1 50%;
+	/*flex: 1 1 auto;*/
 }
-.appointment {
-	background-color: #fff;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 
+.appointment {
+	width: 585px;
+	padding: 0 57px;
+	background-color: #fff;
+	
 }
+
 .appointment__title {
 	font-style: normal;
 	font-weight: 900;
 	font-size: 36px;
 	line-height: 42px;
 	text-align: center;
-}
-.appointment__form {
-}
-.appointment__wrap {
+	padding: 76px 0 43px 0;
 
 }
-.appointment__wrap input{
-	background-color: #d5d5d5;
+.appointment__form {
+	width: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: -12px;	
+	padding-bottom: 30px;
 }
-.appointment__wrap textarea{
-	background-color: #d5d5d5;
+.appointment__item {
+	padding: 12px;
+}
+.appointment__item input{
+	width: 224px;
+	height: 48px;
+	background-color: #f5f5f5;
+}
+.appointment__item textarea{
+	width: 470px;
+	background-color: #f5f5f5;
+}
+.appointment__button {
+	margin-left: 250px;
+	padding-bottom: 124px;
 }
 .page-five__content {
+	width: 380px;
 	padding-top: 160px;
 	padding-bottom: 190px;
 	display: flex;
