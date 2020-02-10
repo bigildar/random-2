@@ -404,6 +404,7 @@ body {
 }
 .page-five {
 	background-color: #d5d5d5;
+	padding-bottom: 210px;
 }
 .page-five__column {
 	display: flex;
@@ -486,3 +487,14 @@ body {
 	text-align: center;
 }
 
+.page-six {
+	Position: relative;
+	top: -80px;
+	left: 0;
+}
+.page-six .container {
+	background-color: #fff;
+}
+.page-six__content {
+	padding: 100px 57px 0 57px;
+}
