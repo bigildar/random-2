@@ -784,3 +784,21 @@ body {
 	color: #4B4B4B;
 	
 }
+.footer {
+	background-color: #d5d5d5;
+}
+.footer__wrap {
+	display: flex;
+	justify-content: space-between;
+	padding: 24px 0;
+
+}
+.footer__item {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: right;
+	letter-spacing: 0.15px;
+	color: #959595;
+}
