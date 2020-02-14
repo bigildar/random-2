@@ -19,7 +19,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
   
 body {
-	/*background-color: #d5d5d5;*/
 	font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
 }
 
@@ -668,20 +667,120 @@ body {
 	letter-spacing: 0.15px;	
 }
 .page-seven__brick {
+	width: 1020px;
 	position: relative;
-	top: 72px;
+	top: 50px;
+	left: 0px;
 	display: flex;
-	padding: 70px 43px;
+	padding: 43px 60px 43px 70px;
 	background-color: #fff;
-	margin: -50px
+	
 }
 .page-seven__legend {
 	font-style: normal;
 	font-weight: 900;
 	font-size: 24px;
 	line-height: 30px;
-	padding: 0 50px;
+	padding: 0 0;
 }
 .page-seven__button {
 	padding: 0 50px;
+}
+.page-footer {
+	padding-top: 160px;
+	background-color: #f5f5f5;
+}
+.page-footer__block {
+	display: flex;
+	justify-content: space-between;
+}
+.page-footer__column {}
+.page-footer__network {
+	width: 237px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 0.15px;
+	color: #4B4B4B;
+	padding-top: 24px;
+	padding-bottom: 33px;
+}
+.page-footer__image-network a {
+	padding-right: 18px;
+}
+.page-footer__title {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 0.15px;
+	color: #4B4B4B;
+}
+.page-footer__content2 {
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 43px;
+	
+}
+.page-footer__item {}
+.page-footer__item p {
+	padding-bottom: 20px;
+}
+.page-footer__contant3 {
+	padding-top: 40px;
+}
+.page-footer__link {
+	padding-bottom: 18px;
+	padding-left: 25px;
+	position: relative;
+}
+
+.page-footer__link_adres:before {
+	content: "";
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 2px;
+	left: 0px;
+	background: url(/random-2/img/place_24px.png) no-repeat;
+}
+.page-footer__link_tel:before {
+	content: "";
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 2px;
+	left: 0px;
+	background: url(/random-2/img/smartphone_24px.png) no-repeat;
+}
+.page-footer__link_mail:before {
+	content: "";
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 2px;
+	left: -2px;
+	background: url(/random-2/img/email_24px.png) no-repeat;
+}
+.page-footer__link_time:before {
+	content: "";
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 2px;
+	left: 0px;
+	background: url(/random-2/img/timer_24px.png) no-repeat;
+}
+.page-footer__link p {
+	display: block;
+	width: 200px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.15px;
+	color: #4B4B4B;
+	
 }
